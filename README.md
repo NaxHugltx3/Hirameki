@@ -6,7 +6,7 @@ main_interface.pyは主にインターフェースに関する関数
 sub_interfaceはその他の関数
 
 bin_fileはfastTextの日本語学習済みmodel
-(読み込みはword2vecの関数で行っている、はず)
+(読み込みはword2vecの関数で行っている)
 
 csvにあるのは
 事前問題(prior_mondai)、事後問題(after_mondai)、ログファイルのフォーマット、常用漢字
