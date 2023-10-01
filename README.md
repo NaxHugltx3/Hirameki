@@ -1,19 +1,35 @@
+発想力を鍛えるPythonアプリケーションで、グラフィカルユーザーインターフェース（GUI）を提供します。
+このREADMEでは、アプリケーションのインストールと使用方法に関する情報を提供します。
 
-プログラムはVScodeで作成
-パッケージはanacondaで管理(pipは使わずcondaのみでinstall)
+## 必要なライブラリとリソース
 
-main_interface.pyは主にインターフェースに関する関数
-sub_interfaceはその他の関数
+Hiramekiを実行するには、以下のライブラリとリソースが必要です：
 
-bin_fileはfastTextの日本語学習済みmodel
-(読み込みはword2vecの関数で行っている)
+- Python 3.x
+- tkinter
+- appscript
+- pandas
+- gensim
+- calendar
+- time
+- natsort
 
-csvにあるのは
-事前問題(prior_mondai)、事後問題(after_mondai)、ログファイルのフォーマット、常用漢字
-作成した問題を格納するファイル(mondai2など)←問題ごとに作成を挟むと時間がかかるのでひとまず事前に作成したものを格納しておいて対応
+さらに、事前に訓練された日本語の単語ベクトルモデルが必要です。
+これはは事前にファイルに入っています。
 
-modelには
-上記の日本語学習済みモデルで学習した単語の中から適切な単語をあらかじめ格納してある
-目的は単語ごとの検索ヒット数を用意しておくため。(←これが時間がかかって論文には間に合わなかった)
-学習済みモデルの登録単語数は23万語あるが、このファイル内には
-N0.1~No.90000までで適切な単語(特に名詞)だけが格納できている。
+## インストール方法
+
+1. Hiramekiリポジトリをクローンします：
+
+```bash
+git clone https://github.com/hoge/Hirameki.git
+cd Hirameki
+```
+2. 以下のコマンドを実行して、必要なライブラリをインストールします。
+```bash
+pip install tkinter appscript pandas gensim calendar natsort
+```
+3. main_interface.pyスクリプトを実行します：
+```bash
+python main_interface.py
+```
