@@ -33,3 +33,10 @@ pip install tkinter appscript pandas gensim calendar natsort
 ```bash
 python main_interface.py
 ```
+これはGUIアプリケーションを提供するpyファイルで起動することで学習を始めることができます。
+
+4. 　同様にsub_interface.pyスクリプトを実行します：
+```bash
+python sub_interface.py
+```
+これは問題作成用のpyファイルで、問題を作成してcsvファイルに格納します。
